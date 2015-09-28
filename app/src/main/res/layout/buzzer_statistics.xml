@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/onePlayerStats"
+        android:id="@+id/twoPlayerTextView"
+        android:layout_gravity="center_horizontal" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="10"
+        android:id="@+id/twoPlayerGridView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/twoPlayerStats"
+        android:id="@+id/threePlayerTextView"
+        android:layout_gravity="center_horizontal" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="10"
+        android:id="@+id/threePlayerGridView"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/fourPlayerStats"
+        android:id="@+id/fourPlayerTextView"
+        android:layout_gravity="center_horizontal" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="10"
+        android:id="@+id/fourPlayerGridView"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

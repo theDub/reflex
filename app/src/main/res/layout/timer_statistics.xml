@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="40sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/category"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:textSize="20dp"
+            android:id="@+id/categoryTextView"
+            android:layout_column="0" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/allTimes"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/allTimesTextView"
+            android:layout_column="1" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lastTen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/lastTenTextView"
+            android:layout_column="2" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lastHundred"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingStart="3dp"
+            android:paddingEnd="6dp"
+            android:textSize="20sp"
+            android:id="@+id/lastHundredTextView"
+            android:layout_column="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/min"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:textSize="17dp"
+            android:id="@+id/minimumTextView"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:text="@string/textField"
+            android:id="@+id/minAllTimesTextView"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:text="@string/textField"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/minLastTenTextView"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:text="@string/textField"
+            android:id="@+id/minLastHundredTextView"
+            android:layout_column="3" />
+
+    </TableRow>
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/max"
+            android:textSize="17dp"
+            android:id="@+id/maximumTextView"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/maxAllTimesTextView"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/maxLastTenTextView"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/maxLastHundredTextView"
+            android:layout_column="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/med"
+            android:textSize="17sp"
+            android:id="@+id/medianTextView"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/medAllTimesTextView"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/medLastTenTextView"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/medLastHundredTextView"
+            android:layout_column="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="17sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/avg"
+            android:id="@+id/averageTextView"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/avgAllTimesTextView"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/avgLastTenTextView"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/textField"
+            android:paddingStart="6dp"
+            android:paddingEnd="3dp"
+            android:textSize="20sp"
+            android:id="@+id/avgLastHundredTextView"
+            android:layout_column="3" />
+
+    </TableRow>
+
+</TableLayout>
