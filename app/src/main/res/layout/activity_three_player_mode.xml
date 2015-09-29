@@ -2,45 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:background="@android:color/holo_red_dark"
+    >
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/P1"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="playerOneClickM3"
+        android:background="@android:color/holo_green_dark"
         android:id="@+id/playerOneButtonM3"
         android:textSize="15pt"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.33" />
+        android:layout_weight="1" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/P2"
         android:textSize="15pt"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="2dp"
+        android:background="@android:color/holo_green_dark"
+        android:layout_marginBottom="5dp"
+        android:onClick="playerTwoClickM3"
         android:id="@+id/playerTwoButtonM3"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.33" />
+        android:layout_weight="1" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/P3"
+        android:onClick="playerThreeClickM3"
         android:textSize="15pt"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_green_dark"
         android:id="@+id/playerThreeButtonM3"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.33" />
+        android:layout_weight="1" />
 
 </LinearLayout>

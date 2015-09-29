@@ -1,24 +1,24 @@
 package com.example.dubsy.reflex;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
-public class MainMenu extends AppCompatActivity {
+public class Timer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_timer);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_timer, menu);
         return true;
     }
 
@@ -37,19 +37,7 @@ public class MainMenu extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void timerAction(View V) {
-        Intent intent = new Intent(MainMenu.this, Timer.class);
-        startActivity(intent);
-    }
-
-    public void statisticsAction(View v) {
-        Intent intent;
-        intent = new Intent(MainMenu.this, Statistics.class);
-        startActivity(intent);
-    }
-
-    public void buzzerAction(View v) {
-        Intent intent = new Intent(MainMenu.this, BuzzerSelect.class);
-        startActivity(intent);
+    public void clickEvent(View v) {
+        Toast.makeText(this, "Wow, Good job you clicked me!!", Toast.LENGTH_SHORT).show();
     }
 }

@@ -9,10 +9,10 @@
     <string name="threePlayerStats">3 Player Statistics</string>
     <string name="fourPlayerStats">4 Player Statistics</string>
 
-    <string name="P1">Player 1</string>
-    <string name="P2">Player 2</string>
-    <string name="P3">Player 3</string>
-    <string name="P4">Player 4</string>
+    <string name="P1">PLAYER 1</string>
+    <string name="P2">PLAYER 2</string>
+    <string name="P3">PLAYER 3</string>
+    <string name="P4">PLAYER 4</string>
 
     <string name="stats">Statistics</string>
     <string name="buzzer">Buzzer</string>
@@ -36,6 +36,15 @@
     <string name="max">Maximum:</string>
     <string name="med">Median:</string>
     <string name="avg">Average:</string>
-    <string name="textField">N/A</string>
+    <string name="textField">0</string>
+    <string name="title_activity_timer">timerActivity</string>
+
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_buzzer_select">BuzzerSelectActivity</string>
+    <string name="title_activity_two_player_mode">TwoPlayerMode</string>
+    <string name="title_activity_three_player_mode">three_player_mode</string>
+    <string name="title_activity_four_player_mode">four_player_mode</string>
+    <string name="title_activity_buzzer_statistics">BuzzerStatisticsActivity</string>
+    <string name="title_activity_timer_statistics">TimerStatistics</string>
 
 </resources>

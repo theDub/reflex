@@ -5,6 +5,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_red_dark"
     android:paddingBottom="@dimen/activity_vertical_margin" >
 
     <Button
@@ -12,12 +13,12 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:onClick="twoPlayerMode"
+        android:layout_marginBottom="5dp"
         android:text="@string/twoPlayers"
+        android:background="@android:color/holo_green_dark"
         android:textSize="15pt"
         android:id="@+id/twoPlayersButton"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
         android:layout_gravity="center_horizontal" />
 
     <Button
@@ -25,26 +26,26 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:onClick="threePlayerMode"
+        android:background="@android:color/holo_green_dark"
         android:text="@string/threePlayers"
         android:textSize="15pt"
         android:id="@+id/threePlayersButton"
-        android:layout_marginTop="10dp"
-        android:onClick=""
+        android:layout_marginBottom="5dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp" />
+        />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_dark"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:onClick="fourPlayerMode"
         android:text="@string/fourPlayers"
         android:textSize="15pt"
         android:id="@+id/fourPlayersButton"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp" />
+        />
 
 </LinearLayout>

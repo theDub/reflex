@@ -3,21 +3,23 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:background="@android:color/holo_green_dark">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/onePlayerStats"
+        android:text="@string/twoPlayerStats"
         android:id="@+id/twoPlayerTextView"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_dark"/>
 
     <GridView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="10"
+        android:layout_weight="50"
+        android:background="@android:color/holo_green_dark"
         android:id="@+id/twoPlayerGridView"
         android:layout_gravity="center_horizontal"/>
 
@@ -26,20 +28,23 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/twoPlayerStats"
+        android:text="@string/threePlayerStats"
         android:id="@+id/threePlayerTextView"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_red_dark"/>
 
     <GridView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="10"
+        android:layout_weight="50"
+        android:background="@android:color/holo_green_dark"
         android:id="@+id/threePlayerGridView"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
         android:layout_weight="1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/fourPlayerStats"
@@ -49,7 +54,8 @@
     <GridView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="10"
+        android:layout_weight="50"
+        android:background="@android:color/holo_green_dark"
         android:id="@+id/fourPlayerGridView"
         android:layout_gravity="center_horizontal"/>
 

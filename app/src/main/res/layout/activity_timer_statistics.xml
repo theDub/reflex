@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:background="@android:color/holo_red_dark">
 
     <TableRow android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_marginBottom="40sp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@android:color/holo_red_light"
+        >
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -14,8 +17,9 @@
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
             android:layout_width="0dp"
-            android:layout_weight="1.1"
-            android:textSize="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15dp"
             android:id="@+id/categoryTextView"
             android:layout_column="0" />
 
@@ -24,9 +28,10 @@
             android:text="@string/allTimes"
             android:paddingStart="3dp"
             android:paddingEnd="3dp"
+            android:background="@android:color/holo_green_dark"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/allTimesTextView"
             android:layout_column="1" />
 
@@ -36,8 +41,9 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:paddingStart="3dp"
+            android:background="@android:color/holo_green_dark"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/lastTenTextView"
             android:layout_column="2" />
 
@@ -47,8 +53,9 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:paddingStart="3dp"
+            android:background="@android:color/holo_green_dark"
             android:paddingEnd="6dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/lastHundredTextView"
             android:layout_column="3" />
 
@@ -57,7 +64,9 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50sp">
+        android:layout_marginBottom="10sp"
+        android:background="@android:color/holo_red_dark"
+        >
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -66,7 +75,8 @@
             android:paddingEnd="3dp"
             android:layout_width="0dp"
             android:layout_weight="1.1"
-            android:textSize="17dp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15dp"
             android:id="@+id/minimumTextView"
             android:layout_column="0" />
 
@@ -76,8 +86,9 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="@string/textField"
+            android:background="@android:color/holo_green_dark"
             android:id="@+id/minAllTimesTextView"
             android:layout_column="1" />
 
@@ -85,7 +96,8 @@
             android:layout_height="wrap_content"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
+            android:background="@android:color/holo_green_dark"
             android:text="@string/textField"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -97,8 +109,9 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:paddingStart="6dp"
+            android:background="@android:color/holo_green_dark"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="@string/textField"
             android:id="@+id/minLastHundredTextView"
             android:layout_column="3" />
@@ -108,17 +121,20 @@
 
     <TableRow android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50sp">
+        android:layout_marginBottom="10sp"
+        android:background="@android:color/holo_red_dark"
+        >
 
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="1.1"
+            android:background="@android:color/holo_green_dark"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/max"
-            android:textSize="17dp"
+            android:textSize="15dp"
             android:id="@+id/maximumTextView"
             android:layout_column="0" />
 
@@ -127,9 +143,10 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:text="@string/textField"
+            android:background="@android:color/holo_green_dark"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/maxAllTimesTextView"
             android:layout_column="1" />
 
@@ -140,7 +157,8 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
+            android:background="@android:color/holo_green_dark"
             android:id="@+id/maxLastTenTextView"
             android:layout_column="2" />
 
@@ -150,8 +168,9 @@
             android:layout_height="wrap_content"
             android:text="@string/textField"
             android:paddingStart="6dp"
+            android:background="@android:color/holo_green_dark"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/maxLastHundredTextView"
             android:layout_column="3" />
 
@@ -160,7 +179,9 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50sp">
+        android:layout_marginBottom="10sp"
+        android:background="@android:color/holo_red_dark"
+        >
 
         <TextView
             android:layout_width="0dp"
@@ -168,9 +189,10 @@
             android:layout_height="wrap_content"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
+            android:background="@android:color/holo_green_dark"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/med"
-            android:textSize="17sp"
+            android:textSize="15sp"
             android:id="@+id/medianTextView"
             android:layout_column="0" />
 
@@ -181,7 +203,8 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15sp"
             android:id="@+id/medAllTimesTextView"
             android:layout_column="1" />
 
@@ -192,7 +215,8 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15sp"
             android:id="@+id/medLastTenTextView"
             android:layout_column="2" />
 
@@ -203,7 +227,8 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15sp"
             android:id="@+id/medLastHundredTextView"
             android:layout_column="3" />
 
@@ -212,7 +237,9 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50sp">
+
+        android:background="@android:color/holo_red_dark"
+        >
 
         <TextView
             android:layout_width="0dp"
@@ -220,7 +247,8 @@
             android:layout_height="wrap_content"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="17sp"
+            android:textSize="15sp"
+            android:background="@android:color/holo_green_dark"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/avg"
             android:id="@+id/averageTextView"
@@ -233,7 +261,8 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15sp"
             android:id="@+id/avgAllTimesTextView"
             android:layout_column="1" />
 
@@ -244,18 +273,20 @@
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="15sp"
             android:id="@+id/avgLastTenTextView"
             android:layout_column="2" />
 
         <TextView
             android:layout_width="0dp"
+            android:background="@android:color/holo_green_dark"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/textField"
             android:paddingStart="6dp"
             android:paddingEnd="3dp"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/avgLastHundredTextView"
             android:layout_column="3" />
 

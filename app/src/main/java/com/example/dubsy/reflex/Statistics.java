@@ -7,18 +7,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainMenu extends AppCompatActivity {
+public class Statistics extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_statistics);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_statistics, menu);
         return true;
     }
 
@@ -37,19 +37,14 @@ public class MainMenu extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void timerAction(View V) {
-        Intent intent = new Intent(MainMenu.this, Timer.class);
-        startActivity(intent);
-    }
-
-    public void statisticsAction(View v) {
+    public void getTimerStatistics(View v) {
         Intent intent;
-        intent = new Intent(MainMenu.this, Statistics.class);
+        intent = new Intent(Statistics.this, TimerStatistics.class);
         startActivity(intent);
     }
 
-    public void buzzerAction(View v) {
-        Intent intent = new Intent(MainMenu.this, BuzzerSelect.class);
+    public void getBuzzerStatistics(View v) {
+        Intent intent = new Intent(Statistics.this, BuzzerStatistics.class);
         startActivity(intent);
     }
 }

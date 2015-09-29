@@ -7,18 +7,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainMenu extends AppCompatActivity {
+public class BuzzerSelect extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_buzzer_select);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_buzzer_select, menu);
         return true;
     }
 
@@ -37,19 +37,18 @@ public class MainMenu extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void timerAction(View V) {
-        Intent intent = new Intent(MainMenu.this, Timer.class);
+    public void twoPlayerMode(View V) {
+        Intent intent = new Intent(BuzzerSelect.this, TwoPlayerMode.class);
         startActivity(intent);
     }
 
-    public void statisticsAction(View v) {
-        Intent intent;
-        intent = new Intent(MainMenu.this, Statistics.class);
+    public void threePlayerMode(View v) {
+        Intent intent = new Intent(BuzzerSelect.this, ThreePlayerMode.class);
         startActivity(intent);
     }
 
-    public void buzzerAction(View v) {
-        Intent intent = new Intent(MainMenu.this, BuzzerSelect.class);
+    public void fourPlayerMode(View v) {
+        Intent intent = new Intent(BuzzerSelect.this, FourPlayerMode.class);
         startActivity(intent);
     }
 }
