@@ -2,6 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.dubsy.reflex.ThreePlayerMode">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/email" android:title="@string/emailStats"
+        android:orderInCategory="100" app:showAsAction="collapseActionView" />
+    <item android:id="@+id/clearStats" android:title="@string/delete_statistics"
+        android:orderInCategory="100" app:showAsAction="collapseActionView" />
 </menu>
