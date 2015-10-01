@@ -1,5 +1,6 @@
 package com.example.dubsy.reflex;
 
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -38,6 +39,6 @@ public class Timer extends AppCompatActivity {
     }
 
     public void clickEvent(View v) {
-        Toast.makeText(this, "Wow, Good job you clicked me!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Wow, Good job you clicked me!!", Toast.LENGTH_LONG).show();
     }
 }
