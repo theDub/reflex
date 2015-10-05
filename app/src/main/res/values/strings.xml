@@ -46,5 +46,12 @@
     <string name="title_activity_four_player_mode">four_player_mode</string>
     <string name="title_activity_buzzer_statistics">BuzzerStatisticsActivity</string>
     <string name="title_activity_timer_statistics">TimerStatistics</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialogMessage">To play: Wait for the clicker to turn green, and then try to click the clicker as quickly as possible.
+        To start: Press Ok and wait for the button to turn green. Remember green means go, red means stop.
+        ***In the event that you press the clicker before it turns green, the time will not be recorded and the game will restart.***</string>
 
 </resources>

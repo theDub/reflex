@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dubsy.reflex.DialogActivity"
+    android:background="@android:color/holo_red_dark"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dialogMessage"
+        android:id="@+id/textView"
+        android:layout_weight="18.13" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingEnd="3dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/ok"
+        android:background="@android:color/holo_green_dark"
+        android:layout_weight="1"
+        android:id="@+id/button"
+        android:onClick="okDialog"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="@android:color/holo_green_dark"
+        style="?android:attr/buttonStyleSmall"
+        android:paddingStart="6dp"
+        android:paddingEnd="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:onClick="cancelDialog"
+        android:layout_weight="1"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,21 +1,20 @@
-package com.example.dubsy.reflex;/* ECE 325 - Lab 1
- * Aaron Arnason
- * 1281110
- * 
- * Implementation of Heap_Sort:
- * Create Object, call ascending sort and pass it an 
- * unsorted array. Then to see the output of the sort
- * call print_sorted_array.
- * 
- * It will build a max heap (root has largest element),
- * and it satisfies cbt (complete binary tree)
- * and the max heap property (the children of any parent
- * hold smaller than or equal to values.
- * 
- * Then it extracts/swaps the max element for some random number
- * and percolates down the tree.
- * Once sorted_values = heapsize - 1 the array has been sorted.
- * */
+package com.example.dubsy.reflex;
+
+/* Copyright (C) 2015  Aaron Arnason
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.*/
 
 public class Heap_Sort {
 	/* Private Variables:

@@ -49,7 +49,7 @@ public class ReactionTimesListTest extends TestCase {
         list.addReactionTime(l);
         ArrayList<ReactionTimer> x = list.getReactionTimes();
         assertTrue("Reaction size is two long.", x.size() == 2);
-        assertTrue("R is bigger since it has to loop 10000 times. ", list.maxReactionTime() == r.getTime());
+        assertTrue("R is bigger since it has to loop 10000 times. ", list.maxReactionTime() == Long.toString(r.getTime()));
     }
 
     public void testMinReactionTime(){
@@ -68,7 +68,7 @@ public class ReactionTimesListTest extends TestCase {
         list.addReactionTime(l);
         ArrayList<ReactionTimer> x = list.getReactionTimes();
         assertTrue("Reaction size is two long.", x.size() == 2);
-        assertTrue("R is bigger since it has to loop 10000 times. ", list.minReactionTime() == l.getTime());
+        assertTrue("R is bigger since it has to loop 10000 times. ", list.minReactionTime() == Long.toString(l.getTime()));
     }
 
     public void testAvgReactionTime(){
@@ -87,7 +87,7 @@ public class ReactionTimesListTest extends TestCase {
         list.addReactionTime(l);
         ArrayList<ReactionTimer> x = list.getReactionTimes();
         assertTrue("Reaction size is two long.", x.size() == 2);
-        assertTrue("R is bigger since it has to loop 10000 times. ", list.avgReactionTime() == ((l.getTime() + r.getTime())/2));
+        assertTrue("R is bigger since it has to loop 10000 times. ", list.avgReactionTime() == Long.toString(((l.getTime() + r.getTime())/2)));
     }
 
     public void testMedReactionTime(){
@@ -114,6 +114,6 @@ public class ReactionTimesListTest extends TestCase {
         }
         t.stop();
         list.addReactionTime(r);
-        assertTrue("The Median is now the r time.", list.medReactionTime() == r.getTime());
+        assertTrue("The Median is now the r time.", list.medReactionTime() == Long.toString(r.getTime()));
     }
 }
