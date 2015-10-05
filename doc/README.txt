@@ -23,7 +23,7 @@ Timerlist class.
 
 Sources Used to help build this application:
 
-Abram Hindle's Student Picker SAGA (most of them)
+Dr. Abram Hindle's Student Picker SAGA (most of them)
 https://www.youtube.com/watch?v=5PPD0ncJU1g&list=PL240uJOh_Vb4PtMZ0f7N8ACYkCLv0673O
 
 Onstart override
